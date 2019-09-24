@@ -26,7 +26,7 @@ Coming soon...
 
 ## Running
 
-The simulation can be run with the script `run_cluster.py` with the options:
+The simulation can be run with the script `run.py` with the options:
 
 ```bash
 usage: python3 run.py [-h] [-K NUM_SC] [-J NUM_USERS] [-Pm PMAX [PMAX ...]]
