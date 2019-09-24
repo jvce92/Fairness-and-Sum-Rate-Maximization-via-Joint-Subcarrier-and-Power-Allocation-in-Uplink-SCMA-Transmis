@@ -28,7 +28,7 @@ Coming soon...
 
 The simulation can be run with the script `run.py` with the options:
 
-```bash
+```
 usage: python3 run.py [-h] [-K NUM_SC] [-J NUM_USERS] [-Pm PMAX [PMAX ...]]
                       [-N NUM_SC_PER_USER] [-df NUM_USERS_PER_SC]
                       [-Np NUM_PROCS] [-bw BANDWIDTH] [-N0 NOISE_POWER]
