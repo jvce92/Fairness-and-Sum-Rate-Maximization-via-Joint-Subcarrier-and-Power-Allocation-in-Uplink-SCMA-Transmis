@@ -1,3 +1,15 @@
+# Citing
+
+```latex
+@ARTICLE{Evangelista2019,
+author={J. V. C. {Evangelista} and Z. {Sattar} and G. {Kaddoum} and A. {Chaaban}},
+journal={IEEE Transactions on Wireless Communications},
+title={Fairness and Sum-Rate Maximization via Joint Subcarrier and Power Allocation in Uplink SCMA Transmission},
+year={2019},
+doi={10.1109/TWC.2019.2939820},
+}
+```
+
 # Abstract
 
 In this work, we consider a sparse code multiple access uplink system, where J users simultaneously transmit data over K subcarriers, such that J > K, with a constraint on the power transmitted by each user. To jointly optimize the subcarrier assignment and the transmitted power per subcarrier, two new iterative algorithms are proposed, the first one aims to maximize the sum-rate (Max-SR) of the network, while the second aims to maximize the fairness (Max-Min). In both cases, the optimization problem is of the mixed-integer nonlinear programming (MINLP) type, with non-convex objective functions, which are generally not tractable. We prove that both joint allocation problems are NP-hard. To address these issues, we employ a variant of the block successive upper-bound minimization (BSUM) 1 framework, obtaining polynomial-time approximation algorithms to the original problem. Moreover, we evaluate the algorithms’ robustness against outdated channel state information (CSI), present an analysis of the convergence of the algorithms, and a comparison of the sum-rate and Jain’s fairness index of the novel algorithms with three other algorithms proposed in the literature. The Max-SR algorithm outperforms the others in the sum-rate sense, while the Max-Min outperforms them in the fairness sense.
