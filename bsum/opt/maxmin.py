@@ -125,7 +125,8 @@ class MaxMinPowerOptimizer(BaseOptimizer):
                 self.prob.solve(solver=self.solver,
                                 verbose=self.verbose, warm_start=self.warmstart)
         except cvx.SolverError as e:
-            print("Solver error! Returning best iterate (Power iteration)")
+            with open("error.log", "a+") as f:
+                print("Solver error! Returning best iterate (Subcarrier iteration)", file=f)
 
         self.z_val = self.z.value
 
@@ -242,7 +243,8 @@ class MaxMinSubcarrierOptimizer(BaseOptimizer):
                                 verbose=self.verbose, warm_start=self.warmstart)
 
         except cvx.SolverError as e:
-            print("Solver error! Returning best iterate (Subcarrier iteration)")
+            with open("error.log", "a+") as f:
+                print("Solver error! Returning best iterate (Subcarrier iteration)", file=f)
 
         phi_prev = np.min(np.sum(rate(self.Fk_prev, self.Pk.value, self.H, self.N0),
                                  axis=0)) + self.lam.value * np.sum(self.Fk_prev**2 - self.Fk_prev)

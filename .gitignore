@@ -173,3 +173,4 @@ pip-selfcheck.json
 
 data/*
 settings.json
+error.log
