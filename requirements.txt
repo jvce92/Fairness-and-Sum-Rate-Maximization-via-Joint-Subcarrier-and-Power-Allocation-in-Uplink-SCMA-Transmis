@@ -1,5 +1,5 @@
 pathos==0.2.3
-numpy==1.16.2
+numpy==1.22.0
 matplotlib==3.0.3
 scipy==1.2.1
 cvxpy==1.0.23
